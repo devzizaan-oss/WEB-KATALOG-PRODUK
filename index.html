@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>ETHOS | Wear The Mindset</title>
+
+    <meta
+      name="description"
+      content="ETHOS is a luxury streetwear brand built on discipline, identity, and cinematic culture."
+    />
+
+    <meta name="theme-color" content="#0a0a0a" />
+
+    <!-- GOOGLE FONT -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/variables.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="css/animation.css" />
+
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+
+  <body>
+    <!-- LOADER -->
+
+    <div class="loader">
+      <div class="loader-content">
+        <img src="asset/logo/logo.jpeg" alt="ETHOS Logo" />
+
+        <h1>ETHOS</h1>
+
+        <p>Wear The Mindset</p>
+      </div>
+    </div>
+
+    <!-- CUSTOM CURSOR -->
+
+    <div class="cursor"></div>
+
+    <!-- GRAIN EFFECT -->
+
+    <div class="grain"></div>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+      <a href="#hero" class="logo">
+        <img src="asset/logo/logo.jpeg" alt="ETHOS Logo" />
+      </a>
+
+      <button class="menu-toggle" aria-label="Open Menu">MENU</button>
+    </header>
+
+    <!-- FULLSCREEN MENU -->
+
+    <div class="fullscreen-menu">
+      <nav class="fullscreen-nav">
+        <a href="#hero">Home</a>
+
+        <a href="#philosophy">Philosophy</a>
+
+        <a href="#featured">Collection</a>
+
+        <a href="#catalog">Catalog</a>
+
+        <a href="#footer">Contact</a>
+      </nav>
+    </div>
+
+    <!-- HERO -->
+
+    <section id="hero" class="hero">
+      <video autoplay muted loop playsinline class="hero-video">
+        <source src="asset/video/hero.mp4" type="video/mp4" />
+      </video>
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <h1 data-reveal>ETHOS</h1>
+
+        <p data-reveal>Wear The Mindset</p>
+
+        <a href="#featured" class="hero-btn magnetic"> Explore Collection </a>
+      </div>
+    </section>
+
+    <!-- PHILOSOPHY -->
+
+    <section id="philosophy" class="philosophy">
+      <div class="container philosophy-content" data-reveal>
+        <h2>
+          ETHOS is not fashion.
+          <br />
+          It is identity.
+        </h2>
+
+        <p>
+          Built from discipline, silence, and ambition. ETHOS represents
+          individuals who move with purpose.
+        </p>
+      </div>
+    </section>
+
+    <!-- FEATURED -->
+
+    <section id="featured" class="featured">
+      <div class="container">
+        <div class="section-title" data-reveal>
+          <h2>Featured Collection</h2>
+        </div>
+
+        <div class="featured-grid">
+          <!-- PRODUCT 1 -->
+
+          <div
+            class="product-card"
+            data-reveal
+            data-title="Ethic / Logic T-Shirt"
+            data-price="Rp 90.000"
+            data-image="./asset/images/img1.jpeg"
+          >
+            <img
+              loading="lazy"
+              src="./asset/images/img1.jpeg"
+              alt="Ethic / Logic T-Shirt"
+            />
+
+            <div class="product-info">
+              <h3>Ethic / Logic T-Shirt</h3>
+
+              <p>Rp 90.000</p>
+            </div>
+          </div>
+
+          <!-- PRODUCT 2 -->
+
+          <div
+            class="product-card"
+            data-reveal
+            data-title="Voice / Void T-Shirt"
+            data-price="Rp 90.000"
+            data-image="./asset/images/img2.jpeg"
+          >
+            <img
+              loading="lazy"
+              src="./asset/images/img2.jpeg"
+              alt="Voice / Void T-Shirt"
+            />
+
+            <div class="product-info">
+              <h3>Voice / Void T-Shirt</h3>
+
+              <p>Rp 90.000</p>
+            </div>
+          </div>
+
+          <!-- PRODUCT 3 -->
+
+          <div
+            class="product-card"
+            data-reveal
+            data-title="Mask / Self T-Shirt"
+            data-price="Rp 90.000"
+            data-image="./asset/images/img3.jpeg"
+          >
+            <img
+              loading="lazy"
+              src="./asset/images/img3.jpeg"
+              alt="Mask / Self T-Shirt"
+            />
+
+            <div class="product-info">
+              <h3>Mask / Self T-Shirt</h3>
+
+              <p>Rp 90.000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCT CATALOG -->
+
+    <section id="catalog" class="catalog">
+      <div class="container">
+        <div class="section-title" data-reveal>
+          <h2>Product Catalog</h2>
+        </div>
+
+        <!-- FILTER -->
+
+        <div class="filter-buttons" data-reveal>
+          <button class="active" data-filter="all">All</button>
+
+          <button data-filter="tshirt">T-Shirt</button>
+
+          <button data-filter="jacket">jacket</button>
+
+          <button data-filter="pants">Pants</button>
+        </div>
+
+        <!-- GRID -->
+
+        <div class="catalog-grid">
+          <!-- ITEM -->
+
+          <div class="catalog-card" data-category="tshirt" data-reveal>
+            <img loading="lazy" src="./asset/images/img6.jpeg" alt="tshirt" />
+
+            <div class="catalog-info">
+              <h3>T-Shirt</h3>
+
+              <p>Rp 90.000</p>
+            </div>
+          </div>
+
+          <!-- ITEM -->
+
+          <div class="catalog-card" data-category="jacket" data-reveal>
+            <img loading="lazy" src="./asset/images/img5.avif" alt="jacket" />
+
+            <div class="catalog-info">
+              <h3>Jacket M65</h3>
+
+              <p>Rp 250.000</p>
+            </div>
+          </div>
+
+          <!-- ITEM -->
+
+          <div class="catalog-card" data-category="pants" data-reveal>
+            <img loading="lazy" src="./asset/images/img4.webp" alt="Pants" />
+
+            <div class="catalog-info">
+              <h3>Pants</h3>
+
+              <p>Rp 250.000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer id="footer">
+      <img src="asset/logo/logo.jpeg" alt="ETHOS Logo" />
+
+      <p>© 2026 ETHOS. All Rights Reserved.</p>
+    </footer>
+
+    <!-- PRODUCT POPUP -->
+
+    <div class="product-popup">
+      <div class="popup-overlay"></div>
+
+      <div class="popup-content">
+        <button class="close-popup">✕</button>
+
+        <img id="popup-img" src="" alt="Product" />
+
+        <div class="popup-info">
+          <h2 id="popup-title"></h2>
+
+          <p id="popup-price"></p>
+
+          <a id="popup-order" href="#" target="_blank" class="popup-btn">
+            Order via WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS -->
+
+    <script src="js/main.js"></script>
+
+    <script src="js/menu.js"></script>
+
+    <script src="js/animation.js"></script>
+
+    <script src="js/filter.js"></script>
+
+    <script src="js/popup.js"></script>
+
+    <script src="js/cursor.js"></script>
+  </body>
+</html>

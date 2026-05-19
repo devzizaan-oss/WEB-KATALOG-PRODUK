@@ -1,0 +1,189 @@
+/* ========================= */
+/* REVEAL ANIMATION */
+/* ========================= */
+
+[data-reveal] {
+  opacity: 0;
+
+  transform: translateY(80px);
+
+  transition:
+    opacity 1s ease,
+    transform 1s ease;
+}
+
+[data-reveal].active {
+  opacity: 1;
+
+  transform: translateY(0);
+}
+
+/* ========================= */
+/* HERO FLOAT */
+/* ========================= */
+
+.hero-content {
+  animation: heroFloat 5s ease-in-out infinite;
+}
+
+@keyframes heroFloat {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* ========================= */
+/* LOADER ANIMATION */
+/* ========================= */
+
+.loader-content {
+  animation: loaderFade 1.5s ease;
+}
+
+@keyframes loaderFade {
+  from {
+    opacity: 0;
+
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+/* ========================= */
+/* PRODUCT IMAGE ZOOM */
+/* ========================= */
+
+.product-card img,
+.catalog-card img {
+  transition:
+    transform 0.7s ease,
+    filter 0.5s ease;
+}
+
+.product-card:hover img,
+.catalog-card:hover img {
+  transform: scale(1.08);
+
+  filter: brightness(1.05);
+}
+
+/* ========================= */
+/* BUTTON MAGNETIC */
+/* ========================= */
+
+.magnetic {
+  transition:
+    transform 0.15s ease,
+    background 0.4s ease;
+}
+
+/* ========================= */
+/* MENU ANIMATION */
+/* ========================= */
+
+.fullscreen-nav a {
+  opacity: 0;
+
+  transform: translateY(30px);
+}
+
+.fullscreen-menu.active .fullscreen-nav a {
+  animation: menuReveal 0.6s ease forwards;
+}
+
+.fullscreen-menu.active .fullscreen-nav a:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.fullscreen-menu.active .fullscreen-nav a:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.fullscreen-menu.active .fullscreen-nav a:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.fullscreen-menu.active .fullscreen-nav a:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.fullscreen-menu.active .fullscreen-nav a:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+@keyframes menuReveal {
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+/* ========================= */
+/* POPUP ANIMATION */
+/* ========================= */
+
+.popup-content {
+  animation: popupShow 0.5s ease;
+}
+
+@keyframes popupShow {
+  from {
+    opacity: 0;
+
+    transform: scale(0.92);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: scale(1);
+  }
+}
+
+/* ========================= */
+/* GRAIN MOVEMENT */
+/* ========================= */
+
+.grain {
+  animation: grainMove 8s steps(10) infinite;
+}
+
+@keyframes grainMove {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  20% {
+    transform: translate(-5%, 5%);
+  }
+
+  40% {
+    transform: translate(5%, -10%);
+  }
+
+  60% {
+    transform: translate(-10%, 5%);
+  }
+
+  80% {
+    transform: translate(5%, 10%);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
